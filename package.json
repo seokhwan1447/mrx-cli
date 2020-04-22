@@ -1,0 +1,24 @@
+{
+  "name": "mrx-cli",
+  "version": "1.0.6",
+  "description": "",
+  "bin": {
+    "mrx": "bin/mrx.js"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "seokhwan.kim",
+  "license": "ISC",
+  "engines": {
+    "node": ">=8.9"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "commander": "^2.20.3",
+    "fs": "0.0.1-security",
+    "fs-extra": "^9.0.0",
+    "inquirer": "^7.1.0",
+    "path": "^0.12.7"
+  }
+}
