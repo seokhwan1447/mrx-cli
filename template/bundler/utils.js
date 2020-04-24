@@ -1,3 +1,4 @@
+// 웹펙 스타일 로더 설정
 'use strict';
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');

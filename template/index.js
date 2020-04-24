@@ -10,7 +10,7 @@ const cmd = require('commander');
 const webpack = require('webpack');
 
 cmd.option('-m, --mode [mode]', 'set mode', 'development')
-  .option('-c, --conf [conf]', 'set config', './config.json')
+  .option('-c, --conf [conf]', 'set config', './configure.json')
   .parse(process.argv);
 
 // 사용자 정의 config

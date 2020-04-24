@@ -1,3 +1,4 @@
+// SPA route에 대한 관리 코드
 import Vue from 'vue'
 import Router from 'vue-router'
 

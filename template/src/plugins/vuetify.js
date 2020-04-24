@@ -1,3 +1,5 @@
+// Vuetify 플러그인 로드 코드
+
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'

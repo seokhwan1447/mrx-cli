@@ -46,19 +46,9 @@
 
       <v-spacer />
 
-      <v-row
-        align="center"
-        style="max-width: 650px"
-      >
-        <v-text-field
-          :append-icon-cb="() => {}"
-          placeholder="Search..."
-          single-line
-          append-icon="mdi-magnify"
-          
-          hide-details
-        />
-      </v-row>
+    <v-btn icon>
+        <v-icon>mdi-export</v-icon>
+      </v-btn>
       
     </v-app-bar>
 
@@ -69,10 +59,9 @@
 </template>
 
 <script>
+import common from './common';
+
 export default {
-    props: {
-      source: String,
-    },
     data () {
         return {
           drawer: null,
@@ -86,8 +75,20 @@ export default {
     computed: {
     },
     methods: {
-      test:function(a,b,c,d) {
-        console.log(a,b,c,d);
+      notifications() {
+        return [{
+          id:common.events.app.startLoading,
+          action:this.startLoading
+        },{
+          id:common.events.app.stopLoading,
+          action:this.stopLoading
+        }]
+      },
+      startLoading() {
+        this.loading = true;
+      },
+      stopLoading() {
+        this.loading = false;
       }
     },
     created() {
